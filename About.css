@@ -1,0 +1,415 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-bottom: 0;
+}
+.topnav-content {
+    background-color: white;
+    margin-top: 20px;
+    
+  }
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .logo-content {
+    margin-right: 250px;
+  }
+  
+  .topnav a {
+    float: left;
+  
+    color: black;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    color: #e1d2a6;
+  }
+  
+  .topnav a.active {
+    color: #968962;
+  }
+
+.first {
+    text-align: center;
+    background-image: url('./assets/tasty-pizza-near-ingredients.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 86vh;
+    width: 99vw;
+}
+.first h1{
+    color: white;
+    margin: 0;
+    padding-top:26vh;
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.first h3{
+    color: white;
+    font-size: 2vw;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+
+
+.banner{
+  background:#e8e3d8;
+}
+
+#cis{
+  border-radius: 10px;
+  margin-left: 200px;
+  
+}
+#ensi{
+  margin-left: 200px;
+}
+
+.banner{
+  position: relative;
+}
+
+
+.banner .slide-container .slide{
+  min-height: 100vh;
+  display: flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap: 15px;
+  padding:20px 9%;
+  padding-bottom: 70px;
+
+}
+
+.banner .slide-container .slide .content{
+  flex:1 1 350px;
+  animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent{
+  0%{
+     opacity:0;
+     transform :translateX(-50px);
+  }
+}
+
+
+.banner .slide-container .slide .image{
+  flex:1 1 350px;
+}
+
+.banner .slide-container .slide .img{
+  width:100%;
+  animation: slideImage .4s linear ;
+  
+}
+
+@keyframes slideImage{
+  0%{
+     opacity:0;
+     transform :translateY(-50px);
+  }
+}
+
+.banner .slide-container .slide .content h2{
+  font-size: 35px;
+  color:rgb(45, 44, 44);
+} 
+
+.banner .slide-container .slide .content p{
+  font-size: 16px;
+  color:rgb(45, 44, 44);
+  padding: 10px 0;
+}
+
+.banner .slide-container .slide .content .btn{
+  margin-top: 10px;
+  display: inline-block;
+  background: rgb(45, 44, 44);
+  color: rgb(238, 131, 9);
+  font-size: 17px;
+  padding: 9px 40px;
+  border-radius:9px;
+}
+
+.banner .slide-container .slide .content .btn:hover{
+  background: rgb(238, 131, 9);
+  color: rgb(45, 44, 44);
+}
+
+.banner .slide-container{
+  display:none;
+}
+
+.banner .slide-container.active{
+  display:block;
+}
+
+.banner #prev, 
+.banner #next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color:rgb(238, 131, 9);
+  background:rgb(45, 44, 44);
+  height: 50px;
+  width: 40px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align:center;
+  cursor: pointer;
+  font-weight: bolder; 
+  border-radius:5px;
+}
+
+.banner #prev:hover , .banner #next:hover{
+  color:rgb(45, 44, 44);
+  background:rgb(238, 131, 9);
+}
+
+.banner #prev{
+  left:20px
+}
+
+
+.banner #next{
+  right:20px
+}
+
+@media (max-width:500px){
+  .banner #prev{
+      left:20px;
+      top: 60%;
+  }
+  
+  
+  .banner #next{
+      right:20px;
+      top:60%;
+  }
+}
+
+.mission{
+    background:#e8e3d8;
+    margin-bottom: 0;
+}
+img{
+    
+    border-radius: 20px;
+    width: 40vw;
+    height: 40vw;
+    margin: 0;
+
+}
+.par{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 33vh;
+    background:#e8e3d8;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+.par h1{
+    color: black;
+    margin: 0;
+    
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.par p{
+    font-size: 1.5vw;
+}
+video{
+    
+    width: 99vw;
+    height: 72vh;
+    margin: 0;
+    object-fit: cover;
+}
+.para{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    height: 33vh;
+    background:#e8e3d8;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.para h1{
+    color: black;
+    margin: 0;
+    
+    font-size: 6vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.para p{
+    font-size: 1vw;
+}
+.aboutus{
+    margin-top: 0;
+    text-align: center;
+    background-image: url('./assets/restaurant-interior.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height: 68vh;
+    width: 99vw;
+    margin-bottom: 0;
+}
+
+
+.foot{
+  background-color: rgb(45, 44, 44);
+  padding-bottom:0;
+  height:60vh;
+  
+
+}
+
+
+footer .container{
+
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom:0;
+  margin-bottom:0;
+  height:50vh;
+}
+
+ul{
+  list-style: none;
+}
+
+.f-col{
+  width: 32%;
+  padding: 0 15px;
+}
+
+.f-col h3{
+text-align:center;
+  font-size: 2vw;
+color: white;
+margin-bottom: 8vh;
+font-weight: 500;
+position: relative;
+}
+
+.f-col h3::before{
+  content: '';
+ position: absolute;
+ left:11vw;
+ bottom: -10px;
+ background-color: rgb(238, 131, 9);
+height: 2px;
+box-sizing: border-box;
+width: 80px;
+}
+
+.f-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.f-col ul li a {
+  padding-top: 6px;
+  font-size: 1.8vw;
+color: white;
+text-decoration: none;
+font-weight: 300;
+display: block;
+transition: all 0.3s ease;
+}
+
+
+
+.f-col ul li a:hover{
+  color: rgb(238, 131, 9);
+  padding-left: 10px;
+}
+
+.f-col ul li i {
+  background-color: white;
+  height: 40px;
+width: 40px;
+  text-align: center;
+line-height: 40px;
+border-radius: 50%;
+  color: #1d202b;
+  transition: all 0.5s ease;
+  margin-left:0;
+  
+}
+
+.icon-center{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
+.f-col .icon-right a {
+  display: inline-block;
+height: 40px;
+width: 40px;
+background-color: white;
+margin:0 20px 20px 10px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: rgb(45, 44, 44);
+transition: all 0.5s ease;
+  
+}
+
+
+
+.f-col .icon-right a:hover{
+  color: white;
+  background-color:rgb(238, 131, 9);
+}
+
+footer p{
+  font-family: futura bold;
+  font-size: 16px;
+  color:white;
+  
+}
+#phone{
+  padding-top: 5px;
+}
+
+@media(max-width: 767px){
+  .f-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .f-col{
+    width: 100%;
+}
+}

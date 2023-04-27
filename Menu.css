@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  margin-bottom: 5vh;
+}
+.topnav-content {
+  background-color: white;
+  margin-top: 20px;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+.topnav {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-right: 250px;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.logo-content {
+  margin-right: 250px;
+}
+
+.topnav a {
+  float: left;
+
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  color: #e1d2a6;
+}
+
+.topnav a.active {
+  color: #968962;
+}
+
+.container {
+  margin-left: 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  padding-left: 3vw;
+}
+.gallery {
+  height: 80vh;
+  width: 40vw;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  left: 0;
+  flex-shrink: 0;
+  object-fit: cover;
+  scroll-snap-type: start;
+}
+h1 {
+  text-align: center;
+  font-size: 6vw;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  font-size: 1.5vw;
+}
+span {
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+.foot{
+  background-color: rgb(45, 44, 44);
+  padding-bottom:0;
+  height:60vh;
+  
+
+}
+
+
+footer .container{
+
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom:0;
+  margin-bottom:0;
+  height:50vh;
+}
+
+ul{
+  list-style: none;
+}
+
+.f-col{
+  width: 32%;
+  padding: 0 15px;
+}
+
+.f-col h3{
+text-align:center;
+  font-size: 2vw;
+color: white;
+margin-bottom: 8vh;
+font-weight: 500;
+position: relative;
+}
+
+.f-col h3::before{
+  content: '';
+ position: absolute;
+ left:11vw;
+ bottom: -10px;
+ background-color: rgb(238, 131, 9);
+height: 2px;
+box-sizing: border-box;
+width: 80px;
+}
+
+.f-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.f-col ul li a {
+  padding-top: 6px;
+  font-size: 1.8vw;
+color: white;
+text-decoration: none;
+font-weight: 300;
+display: block;
+transition: all 0.3s ease;
+}
+
+
+
+.f-col ul li a:hover{
+  color: rgb(238, 131, 9);
+  padding-left: 10px;
+}
+
+.f-col ul li i {
+  background-color: white;
+  height: 40px;
+width: 40px;
+  text-align: center;
+line-height: 40px;
+border-radius: 50%;
+  color: #1d202b;
+  transition: all 0.5s ease;
+  margin-left:0;
+  
+}
+
+.icon-center{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  
+}
+.f-col .icon-right a {
+  display: inline-block;
+height: 40px;
+width: 40px;
+background-color: white;
+margin:0 20px 20px 10px;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: rgb(45, 44, 44);
+transition: all 0.5s ease;
+  
+}
+
+
+
+.f-col .icon-right a:hover{
+  color: white;
+  background-color:rgb(238, 131, 9);
+}
+
+footer p{
+  font-family: futura bold;
+  font-size: 16px;
+  color:white;
+  
+}
+#phone{
+  padding-top: 5px;
+}
+
+@media(max-width: 767px){
+  .f-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .f-col{
+    width: 100%;
+}
+}
